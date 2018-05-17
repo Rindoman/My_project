@@ -24,5 +24,6 @@
   },
   "dependencies": {
     "wowjs": "^1.1.3"
-  }
+  },
+  "homepage": "https://rindoman.github.io/My_project/app/"
 }
