@@ -411,15 +411,8 @@ a {
       font-family: 'Roboto Condensed', sans-serif;
       color: #fff; }
 
-.off {
-  display: none; }
-
-.on {
-  display: block; }
-
 .icon-facebook:before, .icon-facebook:after, .icon-stackoverflow:before, .icon-stackoverflow:after, .icon-github:before, .icon-github:after, .icon-linkedin:before, .icon-linkedin:after {
   font-family: 'icomoon';
-  speak: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -617,18 +610,22 @@ a {
     margin-bottom: 440px; }
   .header {
     height: 500px;
-    padding-top: 7%; }
+    padding-top: 7%;
+    background: #fff url(../img/Web_mobile.jpg) top center no-repeat; }
     .header:before {
-      background: #fff url(../img/Web_mobile.jpg) top center no-repeat; }
+      display: none; }
+    .header:after {
+      display: none; }
     .header-resume__name {
-      padding-top: 100px;
+      padding-top: 180px;
       font-size: 50px; }
     .header-resume__prof {
       font-size: 25px; }
     .header-a {
       width: 100%;
-      height: 22px;
-      font-size: 12px; }
+      height: 25px;
+      font-size: 12px;
+      padding: 3px 10px; }
     .header-navBar {
       width: 80%;
       height: 35px; }
@@ -644,11 +641,6 @@ a {
             margin-right: 6%; }
         .header-navBar__nav__nav a {
           margin-left: 2%; }
-  #eng, #ru {
-    width: 25px;
-    height: 15px;
-    -webkit-border-radius: 3px;
-            border-radius: 3px; }
   .main {
     height: 100%;
     padding-bottom: 10%; }
@@ -659,7 +651,7 @@ a {
       width: 80%;
       padding-left: 10%; }
       .main-left span {
-        font-size: 16px; }
+        font-size: 18px; }
     .main-right {
       display: none; }
     .main-content {
@@ -682,11 +674,8 @@ a {
       height: 40px;
       line-height: 40px;
       font-size: 20px; }
-      .footer-icons__social li:hover {
-        -webkit-box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
-                box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3); }
-        .footer-icons__social li:hover a {
-          top: -40px; }
+      .footer-icons__social li:hover a {
+        top: -40px; }
       .footer-icons__social li a {
         margin-top: 20px;
         margin-left: 20px; }

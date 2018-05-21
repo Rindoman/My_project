@@ -344,16 +344,9 @@ a
             font-family: 'Roboto Condensed', sans-serif
             color: #fff
 
-.off 
-    display: none
-
-.on 
-    display: block
-
 .icon-facebook, .icon-stackoverflow, .icon-github, .icon-linkedin
     &:before, &:after
         font-family: 'icomoon'
-        speak: none
         font-style: normal
         font-weight: normal
         font-variant: normal
@@ -477,17 +470,21 @@ a
     .header        
         height: 500px
         padding-top: 7%
+        background: #fff url(../img/Web_mobile.jpg) top center no-repeat
         &:before
-            background: #fff url(../img/Web_mobile.jpg) top center no-repeat
+            display: none
+        &:after
+            display: none
         &-resume__name
-            padding-top: 100px
+            padding-top: 180px
             font-size: 50px
         &-resume__prof
             font-size: 25px
         &-a
             width: 100%
-            height: 22px
+            height: 25px
             font-size: 12px
+            padding: 3px 10px
         &-navBar
             width: 80%
             height: 35px
@@ -503,10 +500,6 @@ a
                         margin-right: 6%
                 &__nav a
                     margin-left: 2%
-    #eng, #ru
-        width: 25px
-        height: 15px
-        border-radius: 3px
 
     .main
         height: 100%
@@ -518,7 +511,7 @@ a
             width: 80%
             padding-left: 10%
             & span
-                font-size: 16px
+                font-size: 18px
         &-right
             display: none
         &-content
@@ -547,7 +540,6 @@ a
                     line-height: 40px
                     font-size: 20px
                     &:hover
-                        box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3)
                         a
                             top: -40px
                     & a
