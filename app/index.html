@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Exo+2|Fira+Sans+Extra+Condensed|Roboto+Condensed">
-    <script src="js/anim.js" defer type="text/javascript"></script>
+    <!-- <script src="js/anim.js" defer type="text/javascript"></script> -->
 </head>
 <body>
     <!-- HEADER start -->
@@ -38,6 +38,7 @@
                     <div class="main-left">
                         <hr class="main-left__sep"/>
                         <p class="main-left__text run">Hello! I'm a web developer from Ukraine. I really like to work in the field of programming, I constantly improve my professional level. Currently I work remotely, but I want to work in the company to further improve my skills.</p>
+                        <p id="run"></p>
                     </div>
                     <div class="main-right">
                         <img class="main-right__img" src="img/foto.jpg" alt="Foto">
@@ -115,6 +116,14 @@
             </section>
             <!-- FOOTER end -->        
     </div>
-
+    <script type="text/javascript">
+        {
+            if (screen.width > 480) document.write ('<script type="text/javascript" src="js/anim.js" ></sc'+'ript>');
+                else 
+            {
+                document.write ('<script type="text/javascript" src="js/mobile_script.js" ></sc'+'ript>');
+            }
+        }
+    </script>
 </body>
 </html>

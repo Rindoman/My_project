@@ -54,7 +54,7 @@
         position: absolute
         bottom: 0
         left: 0
-        z-index: -1
+        z-index: -2
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(17, 32, 48, 1) 100%)
     &:before 
         content: ""
@@ -72,7 +72,7 @@
         background-position: 50% 20%
         animation: grow 20s linear 15ms infinite
         transition: all 0.2s ease-in-out
-        z-index: -2
+        z-index: -3
     &-links__pdf
         float: right
         padding-top: 5%
@@ -125,7 +125,7 @@
                 margin-left: 25px
     &-a
         margin-bottom: 75px
-        width: 280px
+        padding: 5px 45px
         height: 30px
         border: 2px solid #fff
         line-height: 170%
@@ -470,11 +470,6 @@ a
     .header        
         height: 500px
         padding-top: 7%
-        background: #fff url(../img/Web_mobile.jpg) top center no-repeat
-        &:before
-            display: none
-        &:after
-            display: none
         &-resume__name
             padding-top: 180px
             font-size: 50px
@@ -486,20 +481,7 @@ a
             font-size: 12px
             padding: 3px 10px
         &-navBar
-            width: 80%
-            height: 35px
-            &__nav
-                max-width: 80%
-                margin-top: 5px
-                & li
-                    width: 100%
-                    height: 30px
-                    & a
-                        font-size: 15px
-                    &:not(:last-child) 
-                        margin-right: 6%
-                &__nav a
-                    margin-left: 2%
+            display: none
 
     .main
         height: 100%
@@ -512,6 +494,8 @@ a
             padding-left: 10%
             & span
                 font-size: 18px
+            & .run
+                display: none
         &-right
             display: none
         &-content

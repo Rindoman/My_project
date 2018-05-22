@@ -27,14 +27,14 @@ function nav() {
     navbar.style.animation = 'move-up 1s';
     navbar.style.animationFillMode = 'forwards';
     navbar.style.animationTimingFunction = 'ease-out';
-  } if (document.body.scrollTop > 900 || document.documentElement.scrollTop > 900) {
+  } if (document.body.scrollTop > 1200 || document.documentElement.scrollTop > 1200) {
     skill_90.classList.add("skillbar__90");
     skill_80.classList.add("skillbar__80");
     skill_75.classList.add("skillbar__75");
     skill_45.classList.add("skillbar__45");
     skill_40.classList.add("skillbar__40");
     skill_30.classList.add("skillbar__30");
-  }  if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+  }  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
     foto.style.animation = 'my-move 2s';
     foto.style.display = 'block';
     while ( i < textCont.length) {
