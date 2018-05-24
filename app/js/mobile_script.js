@@ -4,7 +4,6 @@ const skill_75 = document.getElementById("skillbar__75");
 const skill_45 = document.getElementById("skillbar__45");
 const skill_40 = document.getElementById("skillbar__40");
 const skill_30 = document.getElementById("skillbar__30");
-const foto = document.querySelector(".main-right__img");
 
 let message = "Hello! I'm a web developer from Ukraine. I really like to work in the field of programming, I constantly improve my professional level. Currently I work remotely, but I want to work in the company to further improve my skills.";
 let msgCount = 0;
@@ -12,14 +11,12 @@ let timer;
 let messageLabel = document.getElementById("run");
 
 function textFunc() {
-   messageLabel.innerHTML = message.substring(0, msgCount);
-   
-//    if (msgCount == message.length) {
-//       // Stop Timer
-//       clearInterval(timer);            
-//    } else {
+   messageLabel.innerHTML = message.substring(0, msgCount);   
+   if (msgCount == message.length) {
+      clearInterval(timer);            
+   } else {
       msgCount++;
-//    }
+   }
 }
 timer = setInterval("textFunc()", 50);
 

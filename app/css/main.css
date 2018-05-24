@@ -47,7 +47,9 @@
 .header {
   margin: 0 auto;
   position: relative;
-  height: 1000px;
+  overflow: hidden;
+  height: 60vw;
+  max-height: 1000px;
   width: 100%;
   color: #eee; }
   .header:after {
@@ -57,7 +59,7 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: -2;
+    z-index: -1;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#112030));
     background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #112030 100%);
     background: -o-linear-gradient(top, rgba(0, 0, 0, 0) 0%, #112030 100%);
@@ -82,7 +84,7 @@
     -webkit-transition: all 0.2s ease-in-out;
     -o-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out;
-    z-index: -3; }
+    z-index: -2; }
   .header-links__pdf {
     float: right;
     padding-top: 5%;
@@ -190,7 +192,7 @@ a {
     background-image: url(../img/background.jpg);
     -webkit-background-size: cover;
             background-size: cover;
-    opacity: .2;
+    opacity: .5;
     position: absolute;
     height: 1260px;
     width: 100%; }
@@ -604,8 +606,6 @@ a {
     width: 30%; } }
 
 @media screen and (max-width: 800px) {
-  .wrapper {
-    width: 100%; }
   .container {
     margin-bottom: 440px; }
   .header {
@@ -628,7 +628,8 @@ a {
     padding-bottom: 10%; }
     .main-container {
       height: 65%;
-      background-image: url(../img/background_mobile.jpg); }
+      background-image: url(../img/background_mobile.jpg);
+      opacity: .8; }
     .main-left {
       width: 80%;
       padding-left: 10%; }
