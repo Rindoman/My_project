@@ -48,7 +48,7 @@
   margin: 0 auto;
   position: relative;
   overflow: hidden;
-  height: 60vw;
+  height: 100vh;
   max-height: 1000px;
   width: 100%;
   color: #eee; }
@@ -90,9 +90,9 @@
     padding-top: 5%;
     padding-right: 10%; }
   .header-resume__name {
-    padding-top: 100px;
+    padding-top: 200px;
     text-align: center;
-    font-size: 90px;
+    font-size: 120px;
     font-family: 'Fira Sans Extra Condensed', sans-serif; }
   .header-resume__prof {
     text-align: center;
@@ -242,7 +242,7 @@ a {
   .main-content {
     margin-left: auto;
     margin-right: auto;
-    width: 70%; }
+    width: 63%; }
     .main-content__container {
       width: 100%;
       padding-top: 100px;
@@ -627,7 +627,7 @@ a {
     height: 100%;
     padding-bottom: 10%; }
     .main-container {
-      height: 65%;
+      height: 66%;
       background-image: url(../img/background_mobile.jpg);
       opacity: .8; }
     .main-left {
@@ -645,7 +645,9 @@ a {
         padding-left: 0;
         padding-right: 0; }
   .title {
-    margin-left: 10%; }
+    margin-left: 10%;
+    color: #fff;
+    position: relative; }
   .footer {
     height: 440px;
     background-image: url("../img/keyboard_mobile.jpg"); }

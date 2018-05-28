@@ -5,7 +5,7 @@ const skill_45 = document.getElementById("skillbar__45");
 const skill_40 = document.getElementById("skillbar__40");
 const skill_30 = document.getElementById("skillbar__30");
 
-let message = "Hello! I'm a web developer from Ukraine. I really like to work in the field of programming, I constantly improve my professional level. Currently I work remotely, but I want to work in the company to further improve my skills.";
+let message = "Hey! I'm a web developer from Ukraine. I deeply interested in programming field and I constantly improve my professional level. Currently I work remotely, but I'm willing to work at the dinamic company for further improving my skills.";
 let msgCount = 0;
 let timer;
 let messageLabel = document.getElementById("run");
