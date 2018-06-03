@@ -26,7 +26,7 @@
 
 .container {
   margin: 0 auto;
-  width: 100%;
+  width: 100vw;
   position: relative;
   margin-bottom: 540px;
   z-index: 200;
@@ -194,7 +194,7 @@ a {
     opacity: .5;
     position: absolute;
     height: 1760px;
-    width: 100%; }
+    width: 100vw; }
   .main-container {
     width: 60%;
     margin: 0 auto; }
@@ -634,7 +634,6 @@ a {
   .container {
     margin-bottom: 440px; }
   .header {
-    height: 500px;
     padding-top: 7%; }
     .header-resume__name {
       padding-top: 180px;
@@ -651,21 +650,20 @@ a {
   .main {
     height: 100%;
     padding-bottom: 10%; }
-    .main-container {
-      height: 66%;
+    .main-pouring {
+      height: 68%;
       background-image: url(../img/background_mobile.jpg);
       opacity: .8; }
-    .main-left {
-      width: 80%;
-      padding-left: 10%; }
-      .main-left span {
+    .main-container {
+      width: 80%; }
+      .main-container span {
         font-size: 18px; }
-      .main-left .run {
+      .main-container .run {
         display: none; }
     .main-right {
       display: none; }
     .main-content {
-      width: 80%; }
+      width: 100%; }
       .main-content__container {
         padding-left: 0;
         padding-right: 0; }
@@ -673,11 +671,11 @@ a {
     margin-left: 10%;
     color: #fff;
     position: relative; }
+  .portfolio-link a img {
+    width: 250px; }
   .footer {
     height: 440px;
     background-image: url("../img/keyboard_mobile.jpg"); }
-    .footer-wrap__left {
-      margin-right: 10%; }
     .footer-wrap__info {
       font-size: 14px; }
     .footer-icons__social li {

@@ -24,7 +24,7 @@
 
 .container
     margin: 0 auto
-    width: 100%
+    width: 100vw
     position: relative
     margin-bottom: 540px
     z-index: 200
@@ -166,7 +166,7 @@ a
         opacity: .5
         position: absolute
         height: 1760px
-        width: 100%
+        width: 100vw
     &-container
         width: 60%
         margin: 0 auto
@@ -486,7 +486,6 @@ a
         margin-bottom: 440px
 
     .header
-        height: 500px
         padding-top: 7%
         &-resume__name
             padding-top: 180px
@@ -504,13 +503,12 @@ a
     .main
         height: 100%
         padding-bottom: 10%
-        &-container
-            height: 66%
+        &-pouring
+            height: 68%
             background-image: url(../img/background_mobile.jpg)
             opacity: .8
-        &-left
+        &-container
             width: 80%
-            padding-left: 10%
             & span
                 font-size: 18px
             & .run
@@ -518,22 +516,23 @@ a
         &-right
             display: none
         &-content
-            width: 80%
+            width: 100%
             &__container
                 padding-left: 0
                 padding-right: 0
-   
+
     .title
         margin-left: 10%
         color: #fff
         position: relative
-    
+    .portfolio
+        &-link
+            & a img
+                width: 250px
     .footer
         height: 440px
         background-image: url('../img/keyboard_mobile.jpg')
         &-wrap
-            &__left
-                margin-right: 10%
             &__info 
                 font-size: 14px
         &-icons
