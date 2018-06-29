@@ -219,6 +219,8 @@ a {
     padding-top: 40px;
     color: #fff;
     line-height: 200%; }
+    .main-left__text {
+      white-space: pre; }
     .main-left__sep {
       border: 0;
       width: 80px;
@@ -283,33 +285,33 @@ a {
               border-top-left-radius: 3px;
       -webkit-border-bottom-left-radius: 3px;
               border-bottom-left-radius: 3px; }
-  .skillbar__90, .skillbar__80, .skillbar__75, .skillbar__45, .skillbar__40, .skillbar__30 {
+  .skillbar__95, .skillbar__90, .skillbar__75, .skillbar__50, .skillbar__45, .skillbar__30 {
     height: 35px;
     -webkit-border-radius: 3px;
             border-radius: 3px;
     -webkit-transition: width 1s cubic-bezier(0, 0, 1, 1) 500ms;
     -o-transition: width 1s cubic-bezier(0, 0, 1, 1) 500ms;
     transition: width 1s cubic-bezier(0, 0, 1, 1) 500ms; }
+  .skillbar__95 {
+    width: 95%;
+    -webkit-animation: move95 2s;
+            animation: move95 2s; }
   .skillbar__90 {
     width: 90%;
     -webkit-animation: move90 2s;
             animation: move90 2s; }
-  .skillbar__80 {
-    width: 80%;
-    -webkit-animation: move80 2s;
-            animation: move80 2s; }
   .skillbar__75 {
     width: 75%;
     -webkit-animation: move75 2s;
             animation: move75 2s; }
+  .skillbar__50 {
+    width: 50%;
+    -webkit-animation: move45 2s;
+            animation: move45 2s; }
   .skillbar__45 {
     width: 45%;
     -webkit-animation: move45 2s;
             animation: move45 2s; }
-  .skillbar__40 {
-    width: 40%;
-    -webkit-animation: move40 2s;
-            animation: move40 2s; }
   .skillbar__30 {
     width: 30%;
     -webkit-animation: move30 2s;
@@ -558,6 +560,18 @@ a {
     opacity: 0.7;
     text-shadow: 0px 0px 20px rgba(255, 255, 255, 0); } }
 
+@-webkit-keyframes move95 {
+  0% {
+    width: 0; }
+  100% {
+    width: 95%; } }
+
+@keyframes move95 {
+  0% {
+    width: 0; }
+  100% {
+    width: 95%; } }
+
 @-webkit-keyframes move90 {
   0% {
     width: 0; }
@@ -569,18 +583,6 @@ a {
     width: 0; }
   100% {
     width: 90%; } }
-
-@-webkit-keyframes move80 {
-  0% {
-    width: 0; }
-  100% {
-    width: 80%; } }
-
-@keyframes move80 {
-  0% {
-    width: 0; }
-  100% {
-    width: 80%; } }
 
 @-webkit-keyframes move75 {
   0% {
@@ -594,6 +596,18 @@ a {
   100% {
     width: 75%; } }
 
+@-webkit-keyframes move50 {
+  0% {
+    width: 0; }
+  100% {
+    width: 50%; } }
+
+@keyframes move50 {
+  0% {
+    width: 0; }
+  100% {
+    width: 50%; } }
+
 @-webkit-keyframes move45 {
   0% {
     width: 0; }
@@ -605,18 +619,6 @@ a {
     width: 0; }
   100% {
     width: 45%; } }
-
-@-webkit-keyframes move40 {
-  0% {
-    width: 0; }
-  100% {
-    width: 40%; } }
-
-@keyframes move40 {
-  0% {
-    width: 0; }
-  100% {
-    width: 40%; } }
 
 @-webkit-keyframes move30 {
   0% {

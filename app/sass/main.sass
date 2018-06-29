@@ -4,7 +4,7 @@
     src: url('../fonts/icomoon.eot?#iefix') format("embedded-opentype"), url('../fonts/icomoon.woff') format("woff"), url('../fonts/icomoon.ttf') format("truetype"), url('../fonts/icomoon.svg#icomoon') format("svg")
     font-weight: normal
     font-style: normal
-    
+
 *
     margin: 0px
     padding: 0px
@@ -183,6 +183,8 @@ a
         padding-top: 40px
         color: #fff
         line-height: 200%
+        &__text
+            white-space: pre
         &__sep
             border: 0
             width: 80px
@@ -236,26 +238,26 @@ a
             line-height: 35px
             border-top-left-radius: 3px
             border-bottom-left-radius: 3px
-    &__90, &__80, &__75, &__45, &__40, &__30
+    &__95, &__90, &__75, &__50, &__45, &__30
         height: 35px
         border-radius: 3px
         transition: width 1s cubic-bezier(0, 0, 1, 1) 500ms
 
+    &__95
+        width: 95%
+        animation: move95 2s
     &__90
         width: 90%
         animation: move90 2s
-    &__80
-        width: 80%
-        animation: move80 2s
     &__75
         width: 75%
         animation: move75 2s
+    &__50
+        width: 50%
+        animation: move45 2s
     &__45
         width: 45%
         animation: move45 2s
-    &__40
-        width: 40%
-        animation: move40 2s
     &__30
         width: 30%
         animation: move30 2s
@@ -444,17 +446,17 @@ a
         text-shadow: 0px 0px 20px rgba(255,255,255,0.0)
 
 // Streak of skills
+@keyframes move95
+    0%
+        width: 0
+    100%
+        width: 95%
+
 @keyframes move90
     0%
         width: 0
     100%
         width: 90%
-
-@keyframes move80
-    0%
-        width: 0
-    100%
-        width: 80%
 
 @keyframes move75
     0%
@@ -462,18 +464,18 @@ a
     100%
         width: 75%
 
+@keyframes move50
+    0%
+        width: 0
+    100%
+        width: 50%
+
 @keyframes move45
     0%
         width: 0
     100%
         width: 45%
-
-@keyframes move40
-    0%
-        width: 0
-    100%
-        width: 40%
-
+        
 @keyframes move30
     0%
         width: 0
