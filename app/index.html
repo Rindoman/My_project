@@ -12,12 +12,30 @@
 </head>
 
 <body>
+
     <!-- HEADER start -->
     <div id="home" class="wrapper">
         <div class="container">
             <div class="header">
-                <div class="header-navBar" id="topNavBar">
-                    <ul class="header-navBar__nav">
+                <div class="header__top-menu" id="sidebar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="header__menu-aside">
+                    <div class="header__menu-aside--custom" id="menu-switcher">
+                        <label for="rotate"></label>
+                        <input type="checkbox" id="rotate"/>
+                        <div class="wrapper-menu">
+                            <b></b>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__navBar" id="topNavBar">
+                    <ul class="header__navBar--nav">
                         <li>
                             <a href="#home">Home</a>
                         </li>
@@ -32,36 +50,43 @@
                         </li>
                     </ul>
                 </div>
-                <div class="header-links__pdf">
+                <div class="header__links--pdf">
                     <a href="https://drive.google.com/file/d/1Mcrp0-4Oqed3N0E13CL_hhZ9yfb9-dxc/view?usp=sharing" target="_blank">
-                        <span class="header-a on">Download in PDF</span>
+                        <span class="header__a on">Download in PDF</span>
                     </a>
                 </div>
-                <div class="header-resume">
-                    <h1 class="header-resume__name">yanenko mihail</h1>
-                    <p class="header-resume__prof">front end developer</p>
+                <div class="header__resume">
+                    <h1 class="header__resume--name">yanenko mihail</h1>
+                    <p class="header__resume--prof">front end developer</p>
                 </div>
             </div>
             <!-- HEADER end -->
+
+            <button id="btn-up">
+                <a href="#home">
+                    <svg enable-background="new 0 0 300 300" height="40px" id="Layer_1" version="1.1" viewBox="0 0 300 300" width="40px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M151.125,14.989C76.337,14.989,15.71,75.61,15.71,150.4c0,74.782,60.627,135.409,135.415,135.409   c74.787,0,135.415-60.627,135.415-135.409C286.54,75.61,225.912,14.989,151.125,14.989z M151.125,266.664   c-64.212,0-116.263-52.063-116.263-116.264c0-64.214,52.051-116.263,116.263-116.263S267.388,86.186,267.388,150.4   C267.388,214.602,215.337,266.664,151.125,266.664z" fill="#238DB1"/><path d="M255.87,150.402c0,57.851-46.894,104.741-104.745,104.741S46.38,208.253,46.38,150.402   c0-57.852,46.894-104.75,104.745-104.75S255.87,92.55,255.87,150.402z" fill="#238DB1"/><polygon fill="#FFFFFF" points="198.497,159.55 173.681,159.55 173.681,223.303 128.569,223.303 128.569,159.55 103.753,159.55    128.569,116.313 128.569,116.111 128.674,116.111 150.832,77.497 173.271,116.111 173.677,116.111 173.677,116.837  "/></g></svg>
+                </a>
+            </button>
+
             <!-- MAIN start -->
             <div id="about" class="main">
-                <div class="main-container">
+                <div class="main__container">
                     <h2 class="title">about me</h2>
-                    <div class="main-about">
-                        <div class="main-left">
-                            <hr class="main-left__sep" />
-                            <p class="main-left__text run">Hey! I'm a web developer from Ukraine. I deeply interested in programming field and I constantly improve my professional level. Currently I work remotely, but I'm willing to work at the dinamic company for further improving my skills.</p>
+                    <div class="main__about">
+                        <div class="main__left">
+                            <hr class="main__left--sep" />
+                            <p class="main__left--text run">Hey! I'm a web developer from Ukraine. I deeply interested in programming field and I constantly improve my professional level. Currently I work remotely, but I'm willing to work at the dinamic company for further improving my skills.</p>
                             <p id="run"></p>
                         </div>
-                        <div class="main-right">
-                            <img class="main-right__img" src="img/foto.jpg" alt="Foto">
+                        <div class="main__right">
+                            <img class="main__right--img" src="img/foto.jpg" alt="Foto">
                         </div>
                     </div>
                     <h2 class="title">skills</h2>
-                    <div class="main-content">
-                        <div class="main-content__container">
+                    <div class="main__content">
+                        <div class="main__content--container">
                             <div class="skillbar">
-                                <div class="skillbar-title" style="background: #f1652a;">
+                                <div class="skillbar__title" style="background: #f1652a;">
                                     <span>HTML5</span>
                                 </div>
                                 <div id="skillbar__95" style="background: #f1652a;"></div>
@@ -70,7 +95,7 @@
                             <!-- End Skill Bar -->
 
                             <div class="skillbar">
-                                <div class="skillbar-title" style="background: #016fba;">
+                                <div class="skillbar__title" style="background: #016fba;">
                                     <span>CSS3</span>
                                 </div>
                                 <div id="skillbar__90" style="background: #016fba;"></div>
@@ -79,7 +104,7 @@
                             <!-- End Skill Bar -->
 
                             <div class="skillbar">
-                                <div class="skillbar-title" style="background: #218559;">
+                                <div class="skillbar__title" style="background: #218559;">
                                     <span>SASS/SCSS</span>
                                 </div>
                                 <div id="skillbar__75" style="background: #218559;"></div>
@@ -88,7 +113,7 @@
                             <!-- End Skill Bar -->
 
                             <div class="skillbar">
-                                <div class="skillbar-title" style="background: #00d8ff;">
+                                <div class="skillbar__title" style="background: #00d8ff;">
                                     <span>React</span>
                                 </div>
                                 <div id="skillbar__50" style="background: #00d8ff;"></div>
@@ -97,7 +122,7 @@
                             <!-- End Skill Bar -->
 
                             <div class="skillbar">
-                                <div class="skillbar-title" style="background: #89cf18;">
+                                <div class="skillbar__title" style="background: #89cf18;">
                                     <span>Javascript</span>
                                 </div>
                                 <div id="skillbar__45" style="background: #89cf18;"></div>
@@ -106,47 +131,48 @@
                             <!-- End Skill Bar -->
 
                             <div class="skillbar">
-                                <div class="skillbar-title" style="background: #AB4DD2;">
+                                <div class="skillbar__title" style="background: #AB4DD2;">
                                     <span>jQuery</span>
                                 </div>
                                 <div id="skillbar__30" style="background: #AB4DD2;"></div>
                                 <div class="skillbar__percent">30%</div>
                             </div>
                             <!-- End Skill Bar -->
+
                         </div>
                     </div>
                     <div id="portfolio" class="portfolio">
                         <h2 class="title">portfolio</h2>
-                        <div class="portfolio-container">
-                            <div class="portfolio-block">
-                                <p class="portfolio-block__title">Search movies</p>
-                                <p class="portfolio-link">
+                        <div class="portfolio__container">
+                            <div class="portfolio__block">
+                                <p class="portfolio__block--title">Search movies</p>
+                                <p class="portfolio__link">
                                     <a href="https://rindoman.github.io/React/react-dz_4/build/" target="_blank">
-                                        <img class="portfolio-link__img" src="img/film_search.jpg" alt="Film-search">
+                                        <img class="portfolio__link--img" src="img/film_search.jpg" alt="Film-search">
                                     </a>
                                 </p>
                             </div>
-                            <div class="portfolio-block">
-                                <p class="portfolio-block__title">News site</p>
-                                <p class="portfolio-link">
+                            <div class="portfolio__block">
+                                <p class="portfolio__block--title">News site</p>
+                                <p class="portfolio__link">
                                     <a href="https://rindoman.github.io/Test_Coderiver/app/" target="_blank">
-                                        <img class="portfolio-link__img" src="img/news.jpg" alt="News">
+                                        <img class="portfolio__link--img" src="img/news.jpg" alt="News">
                                     </a>
                                 </p>
                             </div>
-                            <div class="portfolio-block">
-                                <p class="portfolio-block__title">Internet shop</p>
-                                <p class="portfolio-link">
+                            <div class="portfolio__block">
+                                <p class="portfolio__block--title">Internet shop</p>
+                                <p class="portfolio__link">
                                     <a href="https://rindoman.github.io/Test_LS_Digital/app/" target="_blank">
-                                        <img class="portfolio-link__img" src="img/gospodar.jpg" alt="Shop Gospodar">
+                                        <img class="portfolio__link--img" src="img/gospodar.jpg" alt="Shop Gospodar">
                                     </a>
                                 </p>
                             </div>
-                            <div class="portfolio-block">
-                                <p class="portfolio-block__title">Landing page</p>
-                                <p class="portfolio-link">
+                            <div class="portfolio__block">
+                                <p class="portfolio__block--title">Landing page</p>
+                                <p class="portfolio__link">
                                     <a href="https://rindoman.github.io/Boosta_test/dist/" target="_blank">
-                                        <img class="portfolio-link__img" src="img/landing.jpg" alt="Landing">
+                                        <img class="portfolio__link--img" src="img/landing.jpg" alt="Landing">
                                     </a>
                                 </p>
                             </div>
@@ -156,14 +182,15 @@
             </div>
         </div>
         <!-- MAIN end -->
+
         <!-- FOOTER start -->
-        <section id="contact">
+        <div id="contact">
             <div class="footer">
-                <div class="footer-caption">
-                    <h2 class="footer-caption__text title">contact</h2>
+                <div class="footer__caption">
+                    <h2 class="footer__caption--text title">contact</h2>
                 </div>
-                <div class="footer-icons">
-                    <ul class="footer-icons__social">
+                <div class="footer__icons">
+                    <ul class="footer__icons--social">
                         <li>
                             <a href="https://www.facebook.com/saridzzzava" target="_blank" class="icon-facebook"></a>
                         </li>
@@ -178,21 +205,22 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer-wrap">
-                    <div class="footer-wrap__left">
-                        <p class="footer-wrap__info">Telephone</p>
-                        <p class="footer-wrap__info">Email</p>
-                        <p class="footer-wrap__info">Skype</p>
+                <div class="footer__wrap">
+                    <div class="footer__wrap--left">
+                        <p class="footer__wrap--info">Telephone</p>
+                        <p class="footer__wrap--info">Email</p>
+                        <p class="footer__wrap--info">Skype</p>
                     </div>
-                    <div class="footer-wrap__right">
-                        <p class="footer-wrap__info">+380 977 625 820</p>
-                        <p class="footer-wrap__info">yanenko.web.dev@gmail.com</p>
-                        <p class="footer-wrap__info">renotesla</p>
+                    <div class="footer__wrap--right">
+                        <p class="footer__wrap--info">+380 977 625 820</p>
+                        <p class="footer__wrap--info">yanenko.web.dev@gmail.com</p>
+                        <p class="footer__wrap--info">renotesla</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
         <!-- FOOTER end -->
+
     </div>
     <script type="text/javascript">
         {

@@ -19,6 +19,25 @@
     margin: 0
     letter-spacing: 1.1px
 
+#menu-switcher
+    display: none
+
+#sidebar
+    display: none
+
+#btn-up
+    display: none
+    border-radius: 100%
+    border: none
+    width: 40px
+    height: 40px
+    position: fixed
+    bottom: 5%
+    right: 5%
+    z-index: 1000
+    opacity: .7
+
+
 .wrapper
     width: 100%
 
@@ -26,13 +45,14 @@
     margin: 0 auto
     width: 100vw
     position: relative
-    margin-bottom: 540px
+    margin-bottom: 460px
     z-index: 200
     color: #3b3a30
     font-family: 'Roboto Condensed', sans-serif
 
-.header-resume__name, .header-resume__prof, 
+.header__resume--name, .header__resume--prof, 
     text-transform: uppercase
+
 .title
     text-transform: uppercase
     font-size: 32px
@@ -74,19 +94,19 @@
         animation: grow 20s linear 15ms infinite
         transition: all 0.2s ease-in-out
         z-index: -2
-    &-links__pdf
+    &__links--pdf
         float: right
         padding-top: 5%
         padding-right: 10%
-    &-resume__name
-        padding-top: 200px
+    &__resume--name
+        padding-top: 20vh
         text-align: center
         font-size: 120px
         font-family: 'Fira Sans Extra Condensed', sans-serif
-    &-resume__prof
+    &__resume--prof
         text-align: center
         font-size: 45px
-    &-navBar
+    &__navBar
         width: 850px
         left: 0
         right: 0
@@ -97,7 +117,7 @@
         border-bottom-right-radius: 10px
         border-bottom-left-radius: 10px
         z-index: 3
-        &__nav
+        &--nav
             display: flex
             justify-content: center
             height: 40px
@@ -115,16 +135,13 @@
                     font-size: 18px
                     text-decoration: none
                     transition: all 0.45s
-                &:hover
-                    background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==")
-                    animation: line 1s
                 &:hover a 
                     color: #d94f5c
                 &:not(:last-child) 
                     margin-right: 30px            
-            &__nav a
+            &--nav a
                 margin-left: 25px
-    &-a
+    &__a
         margin-bottom: 75px
         padding: 5px 45px
         height: 30px
@@ -139,7 +156,7 @@
             font-weight: bold
             background-color: #fff
             cursor: pointer
-    &-resume
+    &__resume
         clear: both
 
 .slideNav
@@ -160,14 +177,14 @@ a
     padding-top: 60px
     background-color: #111
     padding-bottom: 80px
-    &-container
+    &__container
         width: 60%
         margin: 0 auto
-    &-about
+    &__about
         display: flex
         justify-content: space-between
         margin-bottom: 100px
-    &-left
+    &__left
         width: 620px
         height: 300px
         position: relative
@@ -176,9 +193,9 @@ a
         padding-top: 40px
         color: #fff
         line-height: 200%
-        &__text
+        &--text
             white-space: pre
-        &__sep
+        &--sep
             border: 0
             width: 80px
             height: 1px
@@ -187,18 +204,18 @@ a
         & span
             animation: letter-glow 0.7s 0s ease both
             font-size: 24px
-    &-right
-        &__img
+    &__right
+        &--img
             position: relative
             height: 500px
             border-radius: 5px
             margin-right: 20%
             box-shadow: inset 0px 0px 25px 5px rgba(0,0,0,0.75)
             display: none
-    &-content 
+    &__content 
         margin-left: auto
         margin-right: auto
-        &__container
+        &--container
             width: 100%
             padding-top: 100px
             height: auto
@@ -213,7 +230,7 @@ a
     border-radius: 3px
     transition: 0.4s linear
     transition-property: width, background-color
-    &-title
+    &__title
         position: absolute
         top: 0
         left: 0
@@ -264,22 +281,23 @@ a
 .portfolio
     padding-top: 60px
     margin: 0 auto
-    &-container
+    &__container
         display: flex
         flex-wrap: wrap
         justify-content: space-between
     & title
         margin-left: 0
-    &-link
+    &__link
         margin-top: 20px
         & a img
-            width: 450px
+            max-width: 100%
             border-radius: 10px
             position: relative
             &:hover
                 box-shadow: 0px 0px 15px 4px rgba(1,210,255,0.9)
-    &-block
-        &__title
+    &__block
+        max-width: 450px
+        &--title
             padding-top: 50px
             text-align: center
             color: #fff
@@ -287,7 +305,7 @@ a
 
 .footer 
     background-image: url('../img/keyboard.jpg')
-    height: 540px
+    height: 460px
     padding-top: 40px
     background-size: cover
     background-position: 70% 70%
@@ -296,23 +314,23 @@ a
     z-index: 100
     left: 0
     right: 0
-    &-caption
+    &__caption
         padding-top: 40px
-        &__text
+        &--text
             color: #fff
             margin-left: 20%
-    &-icons
-        padding-top: 70px
-        padding-bottom: 50px
-        &__social
+    &__icons
+        padding-top: 50px
+        padding-bottom: 30px
+        &--social
             text-align: center
             li
                 display: inline-block
-                margin: 0 30px
-                width: 60px
-                height: 60px
+                margin: 0 25px
+                width: 50px
+                height: 50px
                 overflow: hidden
-                line-height: 60px
+                line-height: 50px
                 background: #404040
                 border-radius: 100%
                 color: #7DE1D9
@@ -322,13 +340,13 @@ a
                     background: #7DE1D9
                     box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3)
                     a
-                        top: -60px
+                        top: -50px
                 & a
                     display: block
                     width: 100%
                     position: relative
-                    margin-top: 30px
-                    margin-left: 30px
+                    margin-top: 25px
+                    margin-left: 25px
                     top: 0
                     color: #7DE1D9
                     transition: top 0.7s
@@ -336,7 +354,7 @@ a
                         text-align: center
                         position: absolute
                         width: inherit
-                        height: 50%
+                        height: 70%
                         left: 0
                         bottom: 0
                         line-height: 120px
@@ -350,14 +368,14 @@ a
         top: 0
         left: 0
         background: -webkit-radial-gradient(bottom center, ellipse cover, rgba(255, 255, 255, 0.05) 0%, rgba(0, 0, 0, 1) 100%)
-    &-wrap 
-        width: 60%
+    &__wrap 
+        width: 70%
         margin: 0 auto
         padding-top: 50px
+        line-height: 1.3
         display: flex
         justify-content: space-around
-        -webkit-justify-content: space-around
-        &__info 
+        &--info 
             font-size: 32px
             font-family: 'Roboto Condensed', sans-serif
             color: #fff
@@ -389,16 +407,6 @@ a
     &:before, &:after 
         content: "\ead0"
 
-// Red worm
-@keyframes grow 
-    0% 
-        transform: scale(1)  
-    50% 
-        transform: scale(1.2)
-
-@keyframes line 
-    0%
-        background-position-x: 400px
 
 // Move foto
 @keyframes my-move
@@ -478,62 +486,144 @@ a
         width: 30%
 
 
-@media screen and (max-width: 800px)    
+// For mobile
+
+@media screen and (max-width: 720px)    
     .container
-        margin-bottom: 440px
+        margin-bottom: 300px
+
+    #menu-switcher
+        display: block
 
     .header
         padding-top: 7%
-        &-resume__name
-            padding-top: 180px
+        &__top-menu
+            background: rgba(0, 0, 0, 0.7)
+            min-height: 100vh
+            padding: 60px 40px 20px
+            position: absolute
+            top: 0
+            transition: transform 0.4s ease-in-out
+            ul
+                list-style: none
+                padding-top: 25%
+                a
+                    color: #fff
+                    font-size: 18px
+                    line-height: 1.5
+                    text-decoration: none
+                    transition: all 0.45s
+        &__menu-aside
+            height: 40px
+            max-width: 140px
+            text-align: left
+            &--custom
+                width: 50px
+                height: inherit
+                position: relative
+                margin-left: 10px
+                label, .wrapper-menu
+                    position: absolute
+                    top: 0
+                    left: 0
+                    right: 0
+                    bottom: 0
+                    background: transparent
+                label
+                    z-index: 10
+                input[type="checkbox"]
+                    display: none
+                    &:checked + .wrapper-menu > b
+                        transform: translateX(-100%)
+                .wrapper-menu b
+                    margin: 8px 0
+                input[type="checkbox"]:checked + .wrapper-menu
+                    padding: 0
+                    b
+                        margin: 0
+                        margin-left: -10px
+                    &::after
+                        transform: rotate(-45deg)
+                        margin-top: -6px
+                    &::before
+                        transform: rotate(45deg)
+                        margin-top: 10px
+                .wrapper-menu
+                    margin-right: 10px
+                    &::after, &::before, b
+                        content: ' '
+                        border-radius: 3px
+                        box-shadow: 0 0 3px rgba(0, 0, 0, 0.16)
+                        border-radius: 50%
+                        transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+                        width: 100%
+                        height: 3px
+                        display: block
+                        background: white
+        &__resume--name
             font-size: 50px
-        &-resume__prof
+        &__resume--prof
             font-size: 25px
-        &-a
+        &__a
             width: 100%
             height: 25px
             font-size: 12px
             padding: 3px 10px
-        &-navBar
+        &__navBar
             display: none
 
     .main
         height: 100%
         padding-bottom: 10%
-        &-pouring
+        &__about
+            margin-bottom: 50px
+        &__pouring
             height: 68%
             background-image: url(../img/background_mobile.jpg)
             opacity: .8
-        &-container
+        &__container
             width: 80%
             & span
                 font-size: 18px
             & .run
                 display: none
-        &-right
+        &__left
+            height: 100%
+            & hr
+                margin: 0 0 40px
+        &__right
             display: none
-        &-content
+        &__content
             width: 100%
-            &__container
+            &--container
                 padding-left: 0
                 padding-right: 0
 
     .title
-        margin-left: 10%
         color: #fff
         position: relative
     .portfolio
-        &-link
+        &__container
+            flex-direction: column
+            align-items: center
+        &__link
             & a img
-                width: 250px
+                max-width: 250px
+
     .footer
-        height: 440px
-        background-image: url('../img/keyboard_mobile.jpg')
-        &-wrap
-            &__info 
+        padding: 0 10%
+        height: 300px
+        &__caption
+            &--text
+                margin-left: 0
+        &__wrap
+            width: 100%
+            padding-top: 10px
+            &--info 
                 font-size: 14px
-        &-icons
-            &__social
+        &__icons
+            padding-top: 40px
+            &--social
                 li
                     margin: 0 6% 0 0
                     width: 40px
